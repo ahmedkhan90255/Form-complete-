@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+  </head>
+  <body>
+    <h1>Registration Form</h1>
+    <br />
+
+    <form action="./form.html">
+      <label for="name">Full Name:<br /> </label>
+      <input
+        type="text"
+        name="full name"
+        id="name"
+        size="30"
+        maxlength="50"
+        minlength="3"
+        placeholder="Name"
+        required
+      />
+      <br /><br />
+      <label for="father name">Father name:<br /></label>
+      <input
+        type="text"
+        name="father name"
+        id="father name"
+        size="30"
+        maxlength="50"
+        minlength="3"
+        placeholder="Father name"
+        required
+      />
+      <br /><br />
+      <label for="password">Password: <br /> </label>
+      <input
+        type="password"
+        id="password"
+        name="password"
+        size="30"
+        maxlength="50"
+        minlength="5"
+        placeholder="Password"
+        required
+      />
+      <br /><br />
+      <label for="Phone Number">Phone Number: <br></label>
+      <input
+        required
+        type="tel"
+        name="Phone Number"
+        id="Phone Number"
+        maxlength="11"
+        size="30"
+        placeholder="Phone Number"
+      /> <br><br>
+      <label for="bio">Bio:<br /> </label>
+      <textarea
+        name="bio"
+        id="bio"
+        cols="30"
+        rows="5"
+        placeholder="Your Bio"
+      ></textarea>
+      <br /><br />
+      <fieldset>
+        <legend required>Gender:</legend>
+        <input type="radio" name="Gender" value="Male" id="Male" />
+        <label for="Male">Male</label>
+        <br />
+        <input type="radio" name="Gender" value="Female" id="Female" />
+        <label for="Female">Female</label>
+        <br />
+        <input type="radio" name="Gender" value="Other" id="Other" />
+        <label for="Other">Other</label>
+      </fieldset>
+      <br />
+      <fieldset>
+        <legend>Hobbies:</legend>
+        <input type="checkbox" name="Hobbies" value="Cricket" id="Cricket" />
+        <label for="Cricket">Cricket</label>
+        <br />
+        <input type="checkbox" name="Hobbies" value="Football" id="Football" />
+        <label for="Football">Football</label>
+        <br />
+        <input type="checkbox" name="Hobbies" value="Reading" id="Reading" />
+        <label for="Reading">Reading</label>
+      </fieldset>
+      <br /><br />
+      <select name="Country" required>
+        Country:
+        <option value="Select your country">Select your country</option>
+        <option value="Pakistan">Pakistan</option>
+        <option value="India">India</option>
+        <option value="USA">USA</option>
+        <option value="China">China</option>
+        <option value="Russia">Russia</option>
+      </select>
+      <br /><br />
+      Favourite Colors:<select name="Favourite Colors" multiple>
+        <option value="Red">Red</option>
+        <option value="Blue">Blue</option>
+        <option value="Pink">Pink</option>
+        <option value="Orange">Orange</option>
+        <option value="Peach">Peach</option>
+        <option value="Black">Black</option>
+      </select>
+      <br /><br />
+      Birthdate:
+      <input required type="date" name="Birthdate" size="30" />
+      <br /><br />
+      <label for="Email">Email:</label>
+      <input
+        required
+        type="email"
+        name="Email"
+        id="Email"
+        size="30"
+        maxlength="50"
+        placeholder="Email"
+      />
+      <br /><br />
+      <label for="Website Link">Website Link:</label>
+      <input
+        required
+        type="url"
+        name="Website Link"
+        id="Website Link"
+        size="30"
+        maxlength="100"
+        placeholder="Enter URL"
+      />
+      <br /><br />
+      <label for="Search">Search:</label>
+      <input
+        type="search"
+        name="Search"
+        id="Search"
+        size="30"
+        maxlength="100"
+        placeholder="Search"
+      />
+      <br /><br />
+      <label for="File">Profile Picture:</label>
+      <input required type="file" name="Profile Picture" id="Profile Picture" />
+      <br /><br />
+      <label for="SUBMIT"> <button type="submit">SUBMIT</button></label>
+    </form>
+  </body>
+</html>
